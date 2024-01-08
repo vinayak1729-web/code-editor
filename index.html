@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/2ff9d120cb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"  style="color: orangered; font-size: 25px;"></i>HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-css3-alt" style="color: rgb(0, 153, 255); font-size: 25px;"></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-js " style="color: yellow; font-size: 25px;"></i>JavaScript</label>
+            <textarea id="Js-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <div class="outputheader">
+                <label><i class="fa-solid fa-play"style="color: yellow; font-size: 20px;"></i>Output</label>
+                <label style="text-align:right;"><a href="#" onclick="save()"><i class="fa-solid fa-floppy-disk"style="color: yellow; font-size: 20px;" ></i>Save now</a></label>
+            </div>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="index.js"></script>
+   
+</body>
+</html>
